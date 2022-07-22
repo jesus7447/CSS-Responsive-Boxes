@@ -1,3 +1,113 @@
 body {
   background: peachpuff;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container div {
+  margin: 5px;
+}
+
+.a {
+  background-color: rgba(20, 248, 248, 0.877);
+  min-width: 150px;
+  min-height: 150px;
+  width: 100%;
+}
+
+.b {
+  background-color:cadetblue;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.c {
+  background-color:yellow;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.d {
+  background-color:tomato;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.e {
+  background-color:springgreen;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.f {
+  background-color:yellowgreen;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.g {
+  background-color:violet;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.h {
+  background-color:seagreen;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+@media (max-width:340px) {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+  .a {
+    width: 100%;
+    min-height: 100px;
+  }
+  .h {
+    width:100%;
+    min-height: 200px;
+  }
+  .container div {
+    margin: 5px;
+  }
+
+  .b {
+    min-height: 80px;
+    min-width: 80px;
+  }
+
+  .c {
+    min-width: 80px;
+    min-height: 80px;
+  }
+
+  .d {
+    min-width:80px;
+    min-height: 80px;
+  }
+
+  .e {
+    min-width: 80px;
+    min-height: 80px;
+  }
+
+  .f {
+    min-width: 80px;
+    min-height: 80px;
+  }
+
+  .g {
+    min-width: 80px;
+    min-height: 80px;
+  }
+}

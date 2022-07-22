@@ -1,3 +1,65 @@
 body {
   background: blanchedalmond;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container div {
+  margin: 10px;
+}
+
+.a {
+  background-color: aqua;
+  min-height: 150px;
+  min-width: 80px;
+  width: 100%;
+}
+
+.b {
+  background-color: blue;
+  min-height: 500px;
+  min-width: 80px;
+  flex-grow: 1;
+}
+
+.c {
+  background-color: cadetblue;
+  min-height: 100px;
+  min-width: 80px;
+}
+
+@media (max-width: 340px) {
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container div {
+    margin: 10px;
+  }
+  .a {
+    background-color: aqua;
+    min-height: 80px;
+    min-width: 80px;
+    width: 100%;
+  }
+  
+  .b {
+    background-color: blue;
+    min-height: 450px;
+    min-width: 80px;
+    width: 100%;
+  }
+  
+  .c {
+    background-color: cadetblue;
+    min-height: 80px;
+    min-width: 80px;
+    width:100%;
+  }
+  
+}
+
